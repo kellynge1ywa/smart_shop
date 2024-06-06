@@ -1,0 +1,45 @@
+.footer-links{
+    display: flex;
+    justify-content: space-around;
+}
+
+.newsletter{
+    background: rgb(77, 75, 75);
+    padding: 25px 0;
+    display: flex;
+    gap: 1.2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter span{
+    /* text-align: center; */
+}
+
+.newsletter-title{
+    font-weight: bold;
+}
+
+.input{
+    padding: 10px 30px;
+    border-radius: 0.4rem;
+    
+}
+
+.sub-btn{
+    background: rgb(70, 70, 146);
+    padding: 10px 8px;
+}
+
+.copyright-card{
+    margin: 0 auto;
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+}
+
+.copyright{
+    text-align: center;
+    font-size: 18px;
+}

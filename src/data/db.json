@@ -1,0 +1,121 @@
+{
+    "categories":[
+        {
+            "id":"furniture",
+            "name":"Furniture",
+            "imageurl":"https://m.media-amazon.com/images/I/51M3kuVYN5L._AC_UF894,1000_QL80_.jpg"
+        },
+        {
+            "id":"electronics",
+            "name":"Electronics",
+            "imageurl":"https://www.polytechnichub.com/wp-content/uploads/2017/04/Electronic.jpg"
+        },
+        {
+            "id":"books",
+            "name":"Books",
+            "imageurl":"https://miro.medium.com/v2/resize:fit:1200/1*S81O15rjKfG-BFdnNC6-GQ.jpeg"
+        },
+        {
+            "id":"clothing",
+            "name":"Clothing",
+            "imageurl":"https://media.gq-magazine.co.uk/photos/6513fc12401a20d55139ab8b/master/pass/best-clothing-brands-for-men.jpg"
+        },
+        {
+            "id":"tech",
+            "name":"Tech",
+            "imageurl":"https://miro.medium.com/v2/resize:fit:800/1*gNbzQNV8Tv3j7tvgpbUp2w.png"
+        },
+        {
+            "id":"sneakers",
+            "name":"Sneakers",
+            "imageurl":"https://www.lestyleparfait.co.ke/cdn/shop/files/geometric-men-s-sneakers-lestyleparfait-kenya-shoes-1.jpg?v=1703682280"
+        }
+    ],
+    "products":[
+        {
+            "id":"samsung1",
+            "name":"Samsung Galaxy",
+            "imageurl":"https://phonesstorekenya.com/wp-content/uploads/2022/07/Samsung-Galaxy-Z-Fold-4.jpg",
+            "price": 14000,
+            "categoryid":"tech"
+        },
+        {
+            "id":"hpelitebook",
+            "name":"Hp EliteBook",
+            "imageurl":"https://mombasacomputers.b-cdn.net/wp-content/uploads/2022/07/HP-EliteBook-840-G2-Intel-Core-i5-5th-Gen-8GB-RAM-500GB-HDD-14-Inches-HD-Display.jpg",
+            "price": 24000,
+            "categoryid":"tech"
+        },
+        {
+            "id":"hisensetv",
+            "name":"Hisense TV",
+            "imageurl":"https://www.hisensedealers.co.ke/wp-content/uploads/2023/06/70a71k.jpg",
+            "price": 20900,
+            "categoryid":"electronics"
+        },
+        {
+            "id":"refrigerator",
+            "name":"LG Refrigerator",
+            "imageurl":"https://www.lg.com/eastafrica/images/refrigerators/md07520559/gallery/D_13.jpg",
+            "price": 28700,
+            "categoryid":"electronics"
+        },
+        {
+            "id":"sneaker_shoes",
+            "name":"Sneaker Shoes",
+            "imageurl":"https://boutique.co.ke/wp-content/uploads/2023/03/sports-sneaker-for-men-kenya-compress-compress.jpeg",
+            "price": 2700,
+            "categoryid":"sneakers"
+        },
+        {
+            "id":"sneaker_shoe1",
+            "name":"White Sneaker Shoes",
+            "imageurl":"https://www-konga-com-res.cloudinary.com/w_400,f_auto,fl_lossy,dpr_3.0,q_auto/media/catalog/product/Q/O/199326_1694448366.jpg",
+            "price": 1700,
+            "categoryid":"sneakers"
+        },
+        {
+            "id":"sofa_set",
+            "name":"Mecor Modern Linen 2 Piece Sofa Set",
+            "imageurl":"https://m.media-amazon.com/images/I/813nMF0-ZtL._AC_SL1500_.jpg",
+            "price": 37000,
+            "categoryid":"furniture"
+        },
+        {
+            "id":"bed",
+            "name":"White Sneaker Shoes",
+            "imageurl":"https://images.thdstatic.com/productImages/57b0629d-4416-410b-8358-4250bd069842/svn/ivory-noble-house-platform-beds-12333-31_600.jpg",
+            "price": 38500,
+            "categoryid":"furniture"
+        },
+        {
+            "id":"Hoodies",
+            "name":"Hoodies",
+            "imageurl":"https://i.ebayimg.com/images/g/C9MAAOSwGoNj61-x/s-l1200.webp",
+            "price": 1500,
+            "categoryid":"clothing"
+        },
+        {
+            "id":"jeans_trouser",
+            "name":"Jeans Trouser",
+            "imageurl":"https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/25/8195461/1.jpg?1119",
+            "price": 2500,
+            "categoryid":"clothing"
+        },
+        {
+            "id":"rising_strong",
+            "name":"Rising Strong",
+            "imageurl":"https://www.locustherapy.com/wp-content/uploads/2015/09/Rising-Strong.jpg",
+            "price": 900,
+            "categoryid":"books"
+        },
+        {
+            "id":"art_of_living",
+            "name":"The Art of Living",
+            "imageurl":"https://images.ucpress.edu/covers/isbn13/9780520224902.jpg",
+            "price": 1000,
+            "categoryid":"books"
+        }
+
+    ]
+}
