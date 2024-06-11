@@ -35,15 +35,15 @@ const Navbar = () => {
                             </li>
 
                             <li className="nav-item">
-                                <NavLink to="/clothing" className={({ isActive }) => (isActive ? 'active' : 'nav-links')}
+                                <NavLink to="" className={({ isActive }) => (isActive ? 'active' : 'nav-links')}
                                 onClick={handleClick}
                                 >Clothing</NavLink></li>
                             <li className="nav-item">
-                                <NavLink to="/electronics" className={({ isActive }) => (isActive ? 'active' : 'nav-links')}
+                                <NavLink to="" className={({ isActive }) => (isActive ? 'active' : 'nav-links')}
                                 onClick={handleClick}
                                 >Electronics</NavLink></li>
                             <li className="nav-item">
-                                <NavLink to="/furniture" className={({ isActive }) => (isActive ? 'active' : 'nav-links')}
+                                <NavLink to="" className={({ isActive }) => (isActive ? 'active' : 'nav-links')}
                                 onClick={handleClick}
                                 >Furniture</NavLink></li>
                         </ul>

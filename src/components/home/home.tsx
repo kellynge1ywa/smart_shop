@@ -9,6 +9,7 @@ import 'react-multi-carousel/lib/styles.css';
 import { Product } from '../../interfaces/products';
 import { Footer } from '../footer/footer';
 import Navbar from '../navbar/navbar';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -89,11 +90,15 @@ export const Home = () => {
                         <Carousel responsive={responsive}>
                             {categories.map((category) => {
                                 return (
-                                    <div className='card' key={category.id}>
+                                    <NavLink to={`/${category.id}`} key={category.id}>
+                                        <div className='card' key={category.id}>
                                         <img src={category.imageurl} alt="books" />
                                         <h2 className='card-title'>{category.name}</h2>
                                         <button>View</button>
                                     </div>
+
+                                    </NavLink>
+                                    
                                 )
                             })}
 
