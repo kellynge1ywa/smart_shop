@@ -42,7 +42,7 @@ export const Home = () => {
     const [topProducts, setTopProducts] = useState<Product[]>([]);
     useEffect(() => {
         const fetChData = async () => {
-            await axios.get('http://localhost:3000/categories')
+            await axios.get('http://localhost:5143/api/Category')
                 .then((response) => {
 
                     setCategories(response.data)
