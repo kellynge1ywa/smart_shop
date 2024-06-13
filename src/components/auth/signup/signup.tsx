@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import './signup.css'
 import {  useState } from 'react';
-import { RegisterUser } from '../../../interfaces/user';
 import axios from 'axios';
+import { RegisterUser } from '../../../interfaces/user';
 
 const SignUp = () => {
     const [fullname, setFullname] = useState("");
@@ -36,11 +36,12 @@ const SignUp = () => {
 
     const registerUser = async () => {
         const newUser: RegisterUser = { fullname: fullname, email: email, residence: residence, dob: dob, password: password, phoneNumber: phoneNumber };
-        await axios.post('http://localhost:7282/api/Users/Register',
+        await axios.post('http://localhost:5143/api/User/register',
             newUser
         ).then((response)=>{
-            return response.data
             alert("User registered")
+            
+            return response.data
         })
 
     }

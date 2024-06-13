@@ -44,8 +44,9 @@ export const Home = () => {
         const fetChData = async () => {
             await axios.get('http://localhost:5143/api/Category')
                 .then((response) => {
+                    console.log(response.data)
 
-                    setCategories(response.data)
+                    setCategories(response.data.result)
                 })
 
         }
@@ -55,9 +56,9 @@ export const Home = () => {
 
     useEffect(() => {
         const fetChData = async () => {
-            await axios.get('http://localhost:3000/products')
+            await axios.get('http://localhost:5143/api/Product')
                 .then((response) => {
-                    setTopProducts(response.data)
+                    setTopProducts(response.data.result)
                 })
 
         }
@@ -92,7 +93,7 @@ export const Home = () => {
                                 return (
                                     <NavLink to={`/${category.id}`} key={category.id}>
                                         <div className='card' key={category.id}>
-                                        <img src={category.imageurl} alt="books" />
+                                        <img src={category.imageURL} alt="books" />
                                         <h2 className='card-title'>{category.name}</h2>
                                         <button>View</button>
                                     </div>
@@ -123,7 +124,7 @@ export const Home = () => {
                         {topProducts.map((product) => {
                             return (
                                 <div className='card1' key={product.id}>
-                                    <img src={product.imageurl} alt="books" />
+                                    <img src={product.imageURL} alt="books" />
                                     <div className='card-info'>
                                         <h2 className='card-title'>{product.name}</h2>
                                         <span className='price-tag'>Ksh.{product.price}</span> <br />

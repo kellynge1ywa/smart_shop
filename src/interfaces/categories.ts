@@ -1,5 +1,13 @@
 export interface Category{
     id:string,
     name:string,
-    imageurl:string
+    identifier:string,
+    imageURL:string
+}
+
+export interface ResponseDto{
+    error:string,
+    result:Category[],
+    success:boolean
+  
 }

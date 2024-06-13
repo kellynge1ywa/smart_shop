@@ -13,17 +13,18 @@ const Category=()=>{
     const { id } = useParams<{id:string}>();
 
     useEffect(()=>{
-        const fetChData=async ()=>{
-           const response= await axios.get(`http://localhost:3000/products?categoryid=${id}`)
-            
-                setProducts(response.data);
-            
+        const fetchData=async ()=>{
+        await axios.get(`http://localhost:5143/api/Product/categoryproducts/${id}`)
+        .then((response)=>{
+            setProducts(response.data.result); 
 
+        })    
+             
         }
-        fetChData();
+        fetchData();
     },[id])
    
-    // console.log(id );
+    console.log(id );
     return (
         <div>
             <Navbar/>
@@ -31,7 +32,7 @@ const Category=()=>{
                         {products.map((product) => {
                             return (
                                 <div className='category-card' key={product.id}>
-                                    <img src={product.imageurl} alt="books" />
+                                    <img src={product.imageURL} alt="books" />
                                     <div className='category-card-info'>
                                         <h2 className='category-card-title'>{product.name}</h2>
                                         <span className='category-price-tag'>Ksh.{product.price}</span> <br />
